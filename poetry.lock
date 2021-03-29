@@ -156,7 +156,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "django-ninja"
-version = "0.11.0"
+version = "0.12.1"
 description = "Django Ninja - Fast Django REST framework"
 category = "main"
 optional = false
@@ -168,7 +168,7 @@ pydantic = ">=1.6,<1.8"
 
 [package.extras]
 doc = ["mkdocs", "mkdocs-material", "markdown-include"]
-test = ["pytest", "pytest-cov", "pytest-django", "pytest-asyncio", "black"]
+test = ["pytest", "pytest-cov", "pytest-django", "pytest-asyncio", "black", "isort", "flake8", "mypy", "django-stubs"]
 
 [[package]]
 name = "filelock"
@@ -496,8 +496,8 @@ testing = ["django", "django-configurations (>=2.0)"]
 
 [[package]]
 name = "python-dotenv"
-version = "0.15.0"
-description = "Add .env support to your django/flask apps in development and deployments"
+version = "0.16.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
 category = "main"
 optional = false
 python-versions = "*"
@@ -632,7 +632,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "fcdd0984acbac7f2588c4c546cbbc70296380067d66a8c31e74e58d18f5ee655"
+content-hash = "0be0fddeef15063a4bba2e62943a4d7b62e0d58ecd2e11c211d389e4ea8c7eb9"
 
 [metadata.files]
 appdirs = [
@@ -695,8 +695,8 @@ django-extensions = [
     {file = "django_extensions-3.1.1-py3-none-any.whl", hash = "sha256:9507f8761ee760748938fd8af766d0608fb2738cf368adfa1b2451f61c15ae35"},
 ]
 django-ninja = [
-    {file = "django-ninja-0.11.0.tar.gz", hash = "sha256:ae58c876fb127464fcbe32938d6c7ceafbc23a8814e93039e95e44a6f573d67c"},
-    {file = "django_ninja-0.11.0-py3-none-any.whl", hash = "sha256:6a55ee0795f17785984c166a34c79c47cc388e42fa7b6a8f77ece96daf765535"},
+    {file = "django-ninja-0.12.1.tar.gz", hash = "sha256:21a35a5bf082a0b37ba106e25bd017efdd81f0c3d670628aa560904d6fc6b7b3"},
+    {file = "django_ninja-0.12.1-py3-none-any.whl", hash = "sha256:4a9490f43169c5b4227451f00bd7d8e50914d4ea9a087a7e32cb0469e59470bd"},
 ]
 filelock = [
     {file = "filelock-3.0.12-py3-none-any.whl", hash = "sha256:929b7d63ec5b7d6b71b0fa5ac14e030b3f70b75747cef1b10da9b879fef15836"},
@@ -846,8 +846,8 @@ pytest-django = [
     {file = "pytest_django-4.1.0-py3-none-any.whl", hash = "sha256:10e384e6b8912ded92db64c58be8139d9ae23fb8361e5fc139d8e4f8fc601bc2"},
 ]
 python-dotenv = [
-    {file = "python-dotenv-0.15.0.tar.gz", hash = "sha256:587825ed60b1711daea4832cf37524dfd404325b7db5e25ebe88c495c9f807a0"},
-    {file = "python_dotenv-0.15.0-py2.py3-none-any.whl", hash = "sha256:0c8d1b80d1a1e91717ea7d526178e3882732420b03f08afea0406db6402e220e"},
+    {file = "python-dotenv-0.16.0.tar.gz", hash = "sha256:9fa413c37d4652d3fa02fea0ff465c384f5db75eab259c4fc5d0c5b8bf20edd4"},
+    {file = "python_dotenv-0.16.0-py2.py3-none-any.whl", hash = "sha256:31d752f5b748f4e292448c9a0cac6a08ed5e6f4cefab85044462dcad56905cec"},
 ]
 pytz = [
     {file = "pytz-2021.1-py2.py3-none-any.whl", hash = "sha256:eb10ce3e7736052ed3623d49975ce333bcd712c7bb19a58b9e2089d4057d0798"},
